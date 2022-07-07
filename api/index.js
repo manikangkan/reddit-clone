@@ -21,8 +21,7 @@ app.use(
   })
 );
 
-const MONGODB_URL =
-  "mongodb+srv://manikangkandas:ZWm337TKlTsdF7Yk@cluster0.b8hpm.mongodb.net/reddit-clone?retryWrites=true&w=majority";
+const MONGODB_URL = process.env.MONGODB_URL;
 
 mongoose
   .connect(`${MONGODB_URL}`, {
